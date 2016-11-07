@@ -16,7 +16,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.12</version>
+            <version>6.9.13.6</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -33,6 +33,21 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+<plugin>
+      <groupId>com.qulice</groupId>
+      <artifactId>qulice-maven-plugin</artifactId>
+      <version>0.17</version>
+      <configuration>
+        <license>file:${basedir}/LICENSE</license>
+      </configuration>
+      <executions>
+        <execution>
+          <goals>
+            <goal>check</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
 
 <!--            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -1,11 +1,6 @@
 package org.github.exper0.subsetsum;
 
 import com.google.common.collect.LinkedHashMultiset;
-import com.luxoft.data.Entry;
-import com.luxoft.matcher.matchers.price.Price;
-import com.luxoft.matcher.matchers.price.PriceMatcher;
-import com.luxoft.matcher.matchers.price.StrictPriceMatcher;
-
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,8 +16,10 @@ import java.util.TreeSet;
 import java.util.function.ToIntFunction;
 
 /**
- *
- * Created by exper0 (aeg.exper0@gmail.com) on 14.04.2016.
+ * Iterable that provides ability to iterate among all subset sums using arbitrary object type with integer property.
+ * @param <T> Object type.
+ * @author exper0 (aeg.exper0@gmail.com)
+ * @see <a href="https://en.wikipedia.org/wiki/Subset_sum_problem">https://en.wikipedia.org/wiki/Subset_sum_problem</a>
  */
 public class SSIterable<T> implements Iterable<T> {
     protected List<T> data;
